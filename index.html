@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>JS Bin</title>
+    <style>
+        #main {
+            background: #b2fefa !important;
+           
+            background: -webkit-linear-gradient(to right, #b2fefa, #0ed2f7) !important;
+            
+            background: linear-gradient(to right,  #b2fefa, #0ed2f7) ;
+            
+
+        }
+
+        #gameOver {
+            display: none;
+            color: red;
+        }
+
+        .scoreFirst,
+        .scoreSecond {
+            color: green;
+            font-size: 80px;
+
+        }
+
+        .showGameOver {
+            display: block !important;
+            color: red;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: #0F2027;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    </style>
+</head>
+
+<body id="main">
+    <div class="container">
+        <div class="content">
+            <h1 class="text-white"><span id="scoreFirst">0</span> To <span id="scoreSecond">0</span></h1>
+            <br>
+
+            <span class="text-white">Playing to :<span id="playing"> 0 </span></span><br></br>
+            <input type="number" id="inputNumber" class="form-control " placeholder="Playing to">
+            <br><br>
+
+            <div class="btn">
+                <button id="playerOne" class="btn btn-primary">Player one</button>
+                <button id="playerTwo" class="btn btn-primary">Player two</button>
+                <button id="reset" class="btn btn-primary">Reset</button><br><br>
+
+                <span id="gameOver">Game Over</span>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
